@@ -1,0 +1,57 @@
+.hero
+  align-items center
+  background-color #f3f3f3
+  display flex
+  height 100vh
+  margin-bottom $main-offset
+  width 100%
+  &__align
+    width 100%
+  &__container
+    align-items center
+    display flex
+    justify-content space-between
+  &__text
+    // width (550 / $container-width * 100)%
+    max-width 55rem
+    width 50%
+    .h1
+      display inline-block
+      margin-bottom .8rem
+    ul
+      display inline-block
+      list-style-type none
+      margin-bottom 1.6rem
+      padding 0
+      li
+        margin-bottom 1.6rem
+  &__bottom
+    bottom 6rem
+    position absolute
+    padding 0 5rem
+    width 100%
+
+.egor
+  background url('../../img/egor.png') right bottom no-repeat
+  background-size contain
+  height calc(100vh - 5rem)
+  margin-top 5rem
+  width 50%
+  img
+    display block
+  
+.mouse
+  align-items center
+  display flex
+  opacity .5
+  &__img
+    margin-right .8rem
+  &__word
+    display block
+    transform translateY(-2px)
+
+
+
+
+
+

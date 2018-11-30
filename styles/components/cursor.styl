@@ -1,0 +1,36 @@
+body
+  cursor none !important
+*
+  cursor none !important
+*:hover
+  cursor none !important
+
+.cursor
+  background-color #fff
+  // background-color $primary
+  border-radius 50%
+  circle(1.6rem)
+  left -4rem
+  mix-blend-mode difference
+  pointer-events none
+  position fixed
+  top -4rem
+  transition left .07s linear, top .07s linear
+  will-change left, top
+  z-index 99999
+  &:before
+    circle(6.4rem)
+    content ''
+    top -2.8rem
+    left -2.8rem
+    opacity .4
+    border-radius 50%
+    position absolute
+    background-color $primary
+    transition all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+    transform scale(0)
+    z-index -1
+
+
+.cursor__active
+  transform scale(2)

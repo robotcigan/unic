@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=cyrillic')
+
+@import 'helpers/variables.styl'
+@import 'helpers/mixins.styl'
+@import 'helpers/helpers.styl'
+
+@import 'base/base.styl'
+@import 'base/ui.styl'
+@import 'base/typography.styl'
+@import 'base/animations.styl'
+@import 'base/modal.styl'
+
+@import 'components/cursor.styl'
+
+@import 'modifications/modifications.styl'
+
+@import 'pages/index.styl'
+
+// .grid--container
+//   max-width 1540px
+
+.grid--container
+  max-width $container-width
+  // max-width initial
+  // padding 0 (56 / 1900 * 100)%
+
+body
+  background-color #000
+
+.weird-hover
+  &__title
+    color #fff
+    font-size 8rem
+    margin-top 10rem
+    text-align center
+  &__img
+    display block
+    left 0
+    mix-blend-mode difference
+    opacity 0
+    position fixed
+    pointer-events none
+    top 0
+    transition top .1s linear, left .1s linear, opacity .3s
+    will-change left, top
+    z-index 100
+  .delete-me
+    display none
+  &:hover
+    .weird-hover
+      &__img
+        opacity 1
+
+
+@import 'base/media.styl'
+
+
